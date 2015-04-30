@@ -12,7 +12,7 @@
     },
 	"autoload": {
         "psr-4": {
-		"omarabid\\": ""
+		"omarabid\\WP_MVC\\": ""
 		}
     }
 }

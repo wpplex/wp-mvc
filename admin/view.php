@@ -1,21 +1,14 @@
 <?php
-// Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-// Exit if class is already defined
-if ( class_exists( 'BP_MVC_Admin_View' ) ) {
-	return;
-}
+namespace omarabid\admin;
 
 /**
  * Admin View 
  *
- * @class BP_MVC_Admin_View 
+ * @class View 
  * @package app/core
  * @author Abid Omar
  */
-abstract class BP_MVC_Admin_View {
+abstract class View {
 	/**
 	 * Template filename
 	 *
@@ -54,8 +47,8 @@ abstract class BP_MVC_Admin_View {
 		$this->template_id = $this->template_id . '.tpl';
 
 		// Initialize the Twig Engine
-		$this->loader = new Twig_Loader_Filesystem( WPBP_DIR . '/app/templates/admin' );
-		$this->engine = new Twig_Environment( $this->loader );
+		$this->loader = new \Twig_Loader_Filesystem( WPBP_DIR . '/app/templates/admin' );
+		$this->engine = new \Twig_Environment( $this->loader );
 
 		// Load the template into the Engine
 		$this->template = $this->engine->loadTemplate( $this->template_id );
