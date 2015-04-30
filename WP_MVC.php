@@ -1,4 +1,6 @@
 <?php
+namespace omarabid;
+
 /**
  * MVC Core Loader 
  *
