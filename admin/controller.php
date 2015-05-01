@@ -1,5 +1,5 @@
 <?php
-namespace omarabid\WP_MVC\Admin;
+namespace wpplex\WP_MVC\Admin;
 
 /**
  * Admin Controller 

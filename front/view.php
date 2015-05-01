@@ -1,5 +1,5 @@
 <?php
-namespace omarabid\WP_MVC\Front;
+namespace wpplex\WP_MVC\Front;
 
 /**
  * Front View 

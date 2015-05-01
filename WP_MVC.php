@@ -1,5 +1,5 @@
 <?php
-namespace omarabid\WP_MVC;
+namespace wpplex\WP_MVC;
 
 /**
  * MVC Core Loader 
