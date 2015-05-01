@@ -1,5 +1,5 @@
 <?php
-namespace omarabid\admin;
+namespace omarabid\WP_MVC\Admin;
 
 /**
  * Admin View 

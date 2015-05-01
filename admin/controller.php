@@ -80,7 +80,11 @@ abstract class Controller {
 		add_action( 'admin_menu', array( &$this, 'add_menu' ) );
 
 		// Check that we are on the right screen
-		add_action( 'current_screen', array( &$this, 'validate_screen' ) );
+		add_action( 'current_screen', array( &$this, 'validate_screen' ), 0 );
+	}
+
+	public function init() {
+
 	}
 
 	/**
@@ -124,12 +128,16 @@ abstract class Controller {
 
 			// Initialize the view
 			$this->view = new $this->view( $this->model->get_data() );
+			
+			$this->view->controller = $this;
 
 			// Process GET requests
 			$this->process_get();
 
 			// Process POST requests
 			$this->process_post();
+
+			$this->init();
 		}
 	}
 
