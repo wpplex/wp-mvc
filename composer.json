@@ -1,5 +1,5 @@
 {
-    "name": "omarabid/wp-mvc",
+    "name": "wpplex/wp-mvc",
     "type": "library",
     "description": "MVC Framework for WordPress",
     "keywords": ["wordpress", "mvc"],
@@ -12,7 +12,7 @@
     },
 	"autoload": {
         "psr-4": {
-		"omarabid\\WP_MVC\\": ""
+		"wpplex\\WP_MVC\\": ""
 		}
     }
 }
